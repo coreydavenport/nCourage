@@ -8,7 +8,7 @@
  *
  * Main module of the application.
  */
-angular.module('nCourageAppApp', [
+angular.module('nCourageApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',

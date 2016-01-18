@@ -6,7 +6,7 @@
  * # ChatCtrl
  * A demo of using AngularFire to manage a synchronized list.
  */
-angular.module('nCourageAppApp')
+angular.module('nCourageApp')
   .controller('ChatCtrl', function ($scope, Ref, $firebaseArray, $timeout) {
     // synchronize a read-only, synchronized array of messages, limit to most recent 10
     $scope.messages = $firebaseArray(Ref.child('messages').limitToLast(10));

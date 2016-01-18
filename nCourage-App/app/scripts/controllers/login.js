@@ -6,7 +6,7 @@
  * # LoginCtrl
  * Manages authentication to any active providers.
  */
-angular.module('nCourageAppApp')
+angular.module('nCourageApp')
   .controller('LoginCtrl', function ($scope, Auth, $location, $q, Ref, $timeout) {
     $scope.oauthLogin = function(provider) {
       $scope.err = null;
