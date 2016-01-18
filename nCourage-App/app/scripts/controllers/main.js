@@ -5,13 +5,13 @@
  * @name nCourageAppApp.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the nCourageAppApp
+ * Controller of the nCourageApp
  */
 angular.module('nCourageApp')
   .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+    $scope.todos = ['Item 1', 'Item 2', 'Item 3'];
+    $scope.addToDo = function () {
+      $scope.todos.push($scope.todo);
+      $scope.todo = '';
+    };
   });
