@@ -15,6 +15,7 @@ angular.module('nCourageApp', [
     'ngRoute',
     'ngSanitize',
     'ngTouch',
+    'ui.sortable',
     'firebase',
     'firebase.ref',
     'firebase.auth'
