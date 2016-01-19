@@ -73,7 +73,7 @@ angular.module('nCourageApp')
   
 
     function redirect() {
-      $location.path('/account');
+      $location.path('/home');
     }
 
     function showError(err) {
