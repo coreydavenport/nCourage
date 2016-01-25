@@ -3,12 +3,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
+
 
 html, body {
   height: 100%;
@@ -27,14 +22,21 @@ html, body {
 
 }
 
+.input-group {
+
+  padding-bottom: 15px;
+
+}
+
 .footer {
 
   height: 50px;
   left: 0;
   position: absolute;
   right: 0;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
+  color: white;
+  text-align: center;
+ 
 
 }
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -47,8 +49,12 @@ html, body {
 
 /* Custom page header */
 .header {
-  border-bottom: 1px solid #e5e5e5;
   margin-bottom: 10px;
+  background: #008cef;
+  background: -webkit-linear-gradient(left, #008cef 0%, #54a6e5 100%);
+  background: -o-linear-gradient(left, #008cef 0%, #54a6e5 100%);
+  background: linear-gradient(to right, #008cef 0%, #54a6e5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008cef', endColorstr='#54a6e5',GradientType=1 );
 
   /* Make the masthead heading the same height as the navigation */
   h3 {
@@ -57,6 +63,46 @@ html, body {
     line-height: 40px;
     padding-bottom: 19px;
   }
+}   
+
+.navbar {
+  border-style: none;
+  background: #008cef;
+  background: -moz-linear-gradient(left,  #008cef 0%, #54a6e5 100%);
+  background: -webkit-linear-gradient(left,  #008cef 0%,#54a6e5 100%);
+  background: linear-gradient(to right,  #008cef 0%,#54a6e5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008cef', endColorstr='#54a6e5',GradientType=1 );
+
+
+}
+
+img#logo {
+  position: absolute;
+  padding-top: 0;
+  width: 250px;
+  height: 100%;
+  left: 0;
+
+}
+
+
+
+
+body {
+
+  background: #008cef;
+  background: -moz-linear-gradient(left,  #008cef 0%, #54a6e5 100%);
+  background: -webkit-linear-gradient(left,  #008cef 0%,#54a6e5 100%);
+  background: linear-gradient(to right,  #008cef 0%,#54a6e5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008cef', endColorstr='#54a6e5',GradientType=1 );
+
+
+}
+
+h2.todosTitle {
+
+  color: white;
+
 }
 
 
