@@ -62,10 +62,6 @@ angular.module('nCourageApp')
         controller: 'MainCtrl'
       })
 
-      .when('/chat', {
-        templateUrl: 'views/chat.html',
-        controller: 'ChatCtrl'
-      })
       .when('/login', {
         templateUrl: 'views/login.html',
         controller: 'LoginCtrl'

@@ -10,7 +10,7 @@
 angular.module('nCourageApp')
   .controller('MainCtrl', function ($scope, $http, $firebaseArray) {
     
-    $scope.todo = new Object();
+    
 
     var URL = "https://ncourageapp.firebaseio.com/";
     var list = $firebaseArray(new Firebase(URL));
@@ -22,13 +22,24 @@ angular.module('nCourageApp')
       console.log("form data", $scope.todo);
 
       list.$add($scope.todo).then(function(ref) {
-      var id = ref.key();
-      console.log("added todo with id " + id);
-      list.$indexFor(id); // returns location in the array
-    });
+        var id = ref.key();
+        console.log("added todo with id " + id);
+        list.$indexFor(id); // returns location in the array
+      });
     }
     
     $scope.removeToDo = function (index) {
-		  $scope.todos.splice(index, 1);
+		  console.log("index", index);
+      list.$remove(list[index]).then(function(ref) {
+        ref.key() === list.$id; // true
+      });
 		};
+
+    $scope.editToDo = function (index) {
+      console.log("index", index);
+      list.$save(list[index]).then(function(ref) {
+        ref.key() === list[2].$id; // true
+      });
+    };
+
   });

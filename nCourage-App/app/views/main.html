@@ -13,11 +13,12 @@
   </form>
   <!-- ToDo List -->
   <div ui-sortable ng-model="todos">
-    <p class="input-group" ng-repeat="todo in todos" style="padding:3px 10px; cursor: move;">
-      <input type="text" ng-model="todo" class="form-control">
+    <div class="input-group" ng-repeat="todo in todos" style="padding:3px 10px; cursor: move;">
+      <input type="text" ng-model="todo.$value" class="form-control">
       <span class="input-group-btn">
         <button class="btn btn-danger" ng-click="removeToDo($index)" aria-label="Remove">X</button>
+        <button class="btn btn-warning" ng-click="editToDo(todo)" aria-label="Edit">Edit</button>
       </span>
-    </p>
+    </div>
   </div>
 </div>
