@@ -86,6 +86,72 @@ img#logo {
 }
 
 
+.heart {
+
+  transition: all .2s ease-in-out;
+
+}
+
+
+.heart:active {
+
+  transform: scale(2);
+
+}
+
+.clap {
+
+  transition: all .2s ease-in-out;
+
+}
+
+
+.clap:active {
+
+  transform: scale(2);
+
+}
+
+.megaphone {
+
+  transition: all .2s ease-in-out;
+
+}
+
+
+.megaphone:active {
+
+  transform: scale(2);
+
+}
+
+
+/*.heart {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: url(../images/heartAnimate.png) no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+  animation: fave-heart 1s steps(28);
+}
+.heart:hover {
+  background-position: -2800px 0;
+  transition: background 1s steps(28);
+}
+@keyframes fave-heart {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -2800px 0;
+  }
+}*/
+
+
 
 
 body {
