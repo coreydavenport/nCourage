@@ -1,0 +1,220 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+
+
+html, body {
+  height: 100%;
+  padding: 0;
+}
+.container {
+
+  min-height: 100%;
+  position: relative;
+
+}
+
+.todosTitle {
+
+  text-align: center;
+
+}
+
+.input-group {
+
+  padding-bottom: 15px;
+
+}
+
+.footer {
+
+  height: 50px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  color: white;
+  text-align: center;
+ 
+
+}
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  margin-bottom: 10px;
+  background: #008cef;
+  background: -webkit-linear-gradient(left, #008cef 0%, #54a6e5 100%);
+  background: -o-linear-gradient(left, #008cef 0%, #54a6e5 100%);
+  background: linear-gradient(to right, #008cef 0%, #54a6e5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008cef', endColorstr='#54a6e5',GradientType=1 );
+
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+}   
+
+.navbar {
+  border-style: none;
+  background: #008cef;
+  background: -moz-linear-gradient(left,  #008cef 0%, #54a6e5 100%);
+  background: -webkit-linear-gradient(left,  #008cef 0%,#54a6e5 100%);
+  background: linear-gradient(to right,  #008cef 0%,#54a6e5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008cef', endColorstr='#54a6e5',GradientType=1 );
+
+
+}
+
+img#logo {
+  position: absolute;
+  padding-top: 0;
+  width: 250px;
+  height: 100%;
+  left: 0;
+
+}
+
+
+.heart {
+
+  transition: all .2s ease-in-out;
+
+}
+
+
+.heart:active {
+
+  transform: scale(2);
+
+}
+
+.clap {
+
+  transition: all .2s ease-in-out;
+
+}
+
+
+.clap:active {
+
+  transform: scale(2);
+
+}
+
+.megaphone {
+
+  transition: all .2s ease-in-out;
+
+}
+
+
+.megaphone:active {
+
+  transform: scale(2);
+
+}
+
+
+/*.heart {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: url(../images/heartAnimate.png) no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+  animation: fave-heart 1s steps(28);
+}
+.heart:hover {
+  background-position: -2800px 0;
+  transition: background 1s steps(28);
+}
+@keyframes fave-heart {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -2800px 0;
+  }
+}*/
+
+
+
+
+body {
+
+  background: #008cef;
+  background: -moz-linear-gradient(left,  #008cef 0%, #54a6e5 100%);
+  background: -webkit-linear-gradient(left,  #008cef 0%,#54a6e5 100%);
+  background: linear-gradient(to right,  #008cef 0%,#54a6e5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008cef', endColorstr='#54a6e5',GradientType=1 );
+
+
+}
+
+h2.todosTitle {
+
+  color: white;
+
+}
+
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+
+  .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+  }
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+
+  p + h4 {
+    margin-top: 28px;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
